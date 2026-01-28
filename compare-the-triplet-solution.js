@@ -108,14 +108,19 @@ function compareTriplets(a, b) {
 /*
 OPTIMAL SOLUTION
 */
+
 function compareTriplets(a, b) {
+    /* We created an array to update the value of the scores */
     let scores = [0,0];
+    /* We used for in loop to traverse the arrays */
      for (const i in a) {
+         /* We used conditions to conpare the same index of a and b arrays */
          if (a[i] > b[i] ) {
             scores[0]++
          } else if(a[i] < b[i]){
             scores[1]++
          }
     }
+    /* We returned the updated score with a return function */
     return scores
 }
